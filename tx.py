@@ -22,6 +22,9 @@ def StringToBytes(val):
 
 while True:
    msg = input()
+   if msg == "exit":
+        print("transmission finished")
+        break
    print('sending: ',msg)
    writeData(msg)
    time.sleep(0.5)
