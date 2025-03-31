@@ -40,7 +40,7 @@ def i2c(id, tick):
             sys.stdout = sys.__stdout__
          print("command executed")
          readfile(filename)
-         os.system("sshpass -p qwe123 scp output.log pi@192.168.50.101:/home/pi/output.log")
+#         os.system("sshpass -p qwe123 scp output.log pi@192.168.50.101:/home/pi/output.log")
 
       if d == b'\x00show':
          readfile('output.log')
