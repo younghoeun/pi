@@ -1,0 +1,5 @@
+Python indeed has "buffer protocol", but its data model is exactly what you would expect of buffer
+
+continuous memory block with starting address and length. Anything else would be to slow for a "buffer". 
+CPython buffer protocol is described here: https://docs.python.org/3/c-api/buffer.html , and MicroPython's 
+is the same in spirit, but unbloated and simplified.
